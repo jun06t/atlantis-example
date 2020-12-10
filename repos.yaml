@@ -1,0 +1,12 @@
+repos:
+- id: /.*/
+workflows:
+  default:
+    plan:
+      steps:
+      - init
+      - run: terraform fmt -check -diff
+      - plan
+    apply:
+      steps:
+      - apply
