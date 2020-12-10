@@ -1,5 +1,8 @@
 repos:
 - id: /.*/
+  allow_custom_workflows: true
+  apply_requirements:
+  - approved
 workflows:
   default:
     plan:
